@@ -16,3 +16,10 @@ createNoteBtn.addEventListener("click", () => {
     notesContainer.appendChild(inputBox).appendChild(img); // now it is added when u click create button
 
 })
+
+
+notesContainer.addEventListener("click", function(e){
+    if(e.target.tagName === "IMG"){
+        e.target.parentElement.remove();
+    }
+})
